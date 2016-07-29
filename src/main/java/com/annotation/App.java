@@ -6,6 +6,8 @@ package com.annotation;
 public class App {
 
     public static void main(String[] args) throws Exception {
-        AnnotationPrecessor.Precessor(SampleClass.class);
+        AnnotationPrecessor<SampleClass> precessor = new AnnotationPrecessor<SampleClass>();
+        SampleClass sampleClass = new SampleClass();
+        precessor.PrecessorK(new SampleClass());
     }
 }

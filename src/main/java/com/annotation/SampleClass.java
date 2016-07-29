@@ -6,7 +6,7 @@ package com.annotation;
 public class SampleClass {
 
     @TimeKeeper
-    public static void mtd1() {
+    public void mtd1() {
         System.out.println("Hello from mtd1");
     }
 
@@ -15,7 +15,7 @@ public class SampleClass {
     }
 
     @TimeKeeper
-    public static void mtd3() {
+    public void mtd3() {
         System.out.println("Hello from mtd3");
     }
 }
