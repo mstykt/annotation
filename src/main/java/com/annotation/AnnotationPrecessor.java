@@ -8,8 +8,6 @@ import java.lang.reflect.Method;
  */
 public class AnnotationPrecessor<T> {
 
-    private T cls;
-
     public void PrecessorK(T cls) throws Exception {
         System.out.println(cls.getClass().getSimpleName());
         for (Method method : cls.getClass().getDeclaredMethods()) {
