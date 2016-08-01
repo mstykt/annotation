@@ -16,8 +16,8 @@ public class AnnotationPrecessor<T> {
                 if (annotation.annotationType().equals(TimeKeeper.class)) {
                     method.setAccessible(true);
                     /*
-                        if method does not take arg the we should send a intance of class
-                        if we dont we will get nullpointer acception or should make the method static
+                        if method does not take any arg then we should send a instance of class
+                        if we don't we will get null pointer exception or should make the method static
                      */
                     method.invoke(cls);
                 }
